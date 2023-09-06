@@ -598,9 +598,23 @@ video {
   padding: 2rem;
 }
 
+.p-6 {
+  padding: 1.5rem;
+}
+
 .py-10 {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
+}
+
+.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
 }
 
 .pl-20 {
@@ -646,6 +660,16 @@ video {
   border-bottom-width: 3px;
 }
 
+@media (min-width: 375px) {
+  .sm\:p-0 {
+    padding: 0px;
+  }
+
+  .sm\:pl-10 {
+    padding-left: 2.5rem;
+  }
+}
+
 @media (min-width: 768px) {
   .md\:block {
     display: block;
@@ -661,6 +685,10 @@ video {
 
   .md\:bg-background-home-tablet {
     background-image: url('./src/assets/home/background-home-tablet.jpg');
+  }
+
+  .md\:p-0 {
+    padding: 0px;
   }
 
   .md\:pl-10 {
