@@ -5,7 +5,7 @@ import Home from "./pages/Home";
 export default function App() {
   return (
     <div
-      className={`h-screen bg-cover bg-center bg-background-home-mobile md:bg-background-home-tablet lg:bg-background-home-desktop `}
+      className={`h-[300vh] relative bg-cover bg-center bg-background-home-mobile md:bg-background-home-tablet lg:bg-background-home-desktop overflow-hidden `}
     >
       <Navbar />
       <Home />

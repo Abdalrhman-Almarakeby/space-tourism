@@ -3,5 +3,9 @@
 @tailwind utilities;
 
 .active-tab {
-  @apply border-b-[3px] border-solid border-white;
+  @apply md:border-r-0 md:border-b-[3px] border-white;
+}
+
+body {
+  @apply overflow-x-hidden;
 }
