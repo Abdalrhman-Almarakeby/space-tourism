@@ -47,7 +47,7 @@ export default function Navbar() {
       />
 
       <nav
-        className="font-BarlowCondensed h-screen max-w-[75%] absolute pt-24 md:pt-0 md:static top-0  transition-all md:h-auto text-white bg-[#ffffff0a]  backdrop-blur-2xl md:pl-20 md:pr-32 md:block"
+        className="font-BarlowCondensed h-[120svh] max-w-[75%] absolute pt-24 md:pt-0 md:static top-0  transition-all md:h-auto text-white bg-[#ffffff0a]  backdrop-blur-2xl md:pl-20 md:pr-32 md:block"
         style={navStyle}
         id="menu"
       >
