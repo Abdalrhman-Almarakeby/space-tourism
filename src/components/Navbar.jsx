@@ -47,40 +47,28 @@ export default function Navbar() {
       />
 
       <nav
-        className="font-BarlowCondensed h-[120svh] max-w-[75%] absolute pt-24 md:pt-0 md:static top-0  transition-all md:h-auto text-white bg-[#ffffff0a]  backdrop-blur-2xl md:pl-20 md:pr-32 md:block"
+        className="font-BarlowCondensed h-[120svh] max-w-[75%] absolute pt-24 md:pt-0 md:static top-0  transition-all md:h-auto text-white bg-[#ffffff0a]  backdrop-blur-2xl md:px-12 lg:pl-20 lg:pr-32 md:block"
         style={navStyle}
         id="menu"
       >
-        <ul className="flex  gap-2 md:gap-0 md:text-sm tracking-[3px] flex-col md:flex-row lg:text-base">
-          <li className="hover:border-white/30 border-r-4 border-solid border-transparent md:hover:border-b-[3px] md:hover:border-r-0 active-tab">
-            <a
-              href="/"
-              className="inline-block md:py-5 px-8 lg:py-10 py-3 pr-20 md:px-5"
-            >
+        <ul className="flex gap-2 md:gap-10 md:text-sm tracking-[3px] flex-col md:flex-row lg:text-base">
+          <li className="tab active-tab">
+            <a href="/">
               <span className="md:hidden lg:inline">00</span> Home
             </a>
           </li>
-          <li className="hover:border-white/30 border-r-4 border-solid border-transparent md:hover:border-b-[3px] md:hover:border-r-0">
-            <a
-              href="/destination"
-              className="inline-block md:py-5 px-8 lg:py-10 py-3 pr-20 md:px-5"
-            >
+          <li className="tab">
+            <a href="/destination">
               <span className="md:hidden lg:inline">01</span> Destination
             </a>
           </li>
-          <li className="hover:border-white/30 border-r-4 border-solid border-transparent md:hover:border-b-[3px] md:hover:border-r-0">
-            <a
-              href="/crew"
-              className="inline-block md:py-5 px-8 lg:py-10 py-3 pr-20 md:px-5"
-            >
+          <li className="tab">
+            <a href="/crew">
               <span className="md:hidden lg:inline">02</span> Crew
             </a>
           </li>
-          <li className="hover:border-white/30 border-r-4 border-solid border-transparent md:hover:border-b-[3px] md:hover:border-r-0">
-            <a
-              href="/technology"
-              className="inline-block md:py-5 px-8 lg:py-10 py-3 pr-20 md:px-5"
-            >
+          <li className="tab">
+            <a href="/technology">
               <span className="md:hidden lg:inline">03</span> Technology
             </a>
           </li>

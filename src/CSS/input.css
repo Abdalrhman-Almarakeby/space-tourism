@@ -2,10 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
-.active-tab {
-  @apply md:border-r-0 md:border-b-[3px] border-white;
-}
-
 body {
   @apply overflow-x-hidden;
+}
+
+.tab {
+  @apply border-r-4 border-solid border-transparent md:hover:border-b-[3px] md:hover:border-r-0 md:border-r-0;
+}
+
+.active-tab {
+  @apply border-r-[3px] md:border-b-[3px] border-white md:border-r-0;
+}
+.tab:not(.active-tab) {
+  @apply hover:border-white/30;
+}
+
+.tab > a {
+  @apply inline-block md:py-10 px-8 lg:py-10 py-3 sm:pr-20 md:px-0;
+}
+
+h1 {
+  color: white;
+  font-size: 40px;
 }
