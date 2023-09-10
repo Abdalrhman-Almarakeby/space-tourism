@@ -52,7 +52,7 @@ export default function Navbar() {
         id="menu"
       >
         <ul className="flex gap-2 md:gap-10 md:text-sm tracking-[3px] flex-col md:flex-row lg:text-base">
-          <Tab num={1} href="/">
+          <Tab num={0} href="/">
             Home
           </Tab>
           <Tab num={1} href="/destination">
