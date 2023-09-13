@@ -4,7 +4,7 @@ export default function Tab({ href, children, num, ...props }) {
   return (
     <li className={`tab ${path === href ? "active-tab" : ""}`}>
       <a href={href} {...props}>
-        <span className="md:hidden lg:inline">0{num}</span> {children}
+        <span className="md:hidden xl:inline">0{num}</span> {children}
       </a>
     </li>
   );

@@ -23,7 +23,7 @@ export default function App() {
   }
   return (
     <div
-      className={`h-[300vh] relative bg-cover bg-center bg-background-home-mobile md:bg-background-home-tablet lg:bg-background-home-desktop overflow-hidden `}
+      className={`min-h-screen flex flex-col relative bg-cover bg-center bg-background-home-mobile md:bg-background-home-tablet xl:bg-background-home-desktop overflow-hidden`}
     >
       <Navbar />
       {page}
