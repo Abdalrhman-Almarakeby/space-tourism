@@ -1,5 +1,5 @@
 // eslint-disable-next-line react/prop-types
-export default function Tab({ href, children, num, ...props }) {
+export default function NavItem({ href, children, num, ...props }) {
   const path = window.location.pathname;
   return (
     <li className={`tab ${path === href ? "active-tab" : ""}`}>

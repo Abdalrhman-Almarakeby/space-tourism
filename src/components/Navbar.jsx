@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import logo from "../assets/shared/logo.svg";
 import hamburgerIcon from "../assets/shared/icon-hamburger.svg";
 import closeIcon from "../assets/shared/icon-close.svg";
-import Tab from "./Tab";
+import NavItem from "./NavItem";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -50,18 +50,18 @@ export default function Navbar() {
         id="menu"
       >
         <ul className="flex gap-2 md:gap-10 md:text-sm tracking-[3px] flex-col md:flex-row xl:text-base">
-          <Tab num={0} href="/">
+          <NavItem num={0} href="/">
             Home
-          </Tab>
-          <Tab num={1} href="/destination">
+          </NavItem>
+          <NavItem num={1} href="/destination">
             Destination
-          </Tab>
-          <Tab num={2} href="/crew">
+          </NavItem>
+          <NavItem num={2} href="/crew">
             Crew
-          </Tab>
-          <Tab num={3} href="/technology">
+          </NavItem>
+          <NavItem num={3} href="/technology">
             Technology
-          </Tab>
+          </NavItem>
         </ul>
       </nav>
     </header>
