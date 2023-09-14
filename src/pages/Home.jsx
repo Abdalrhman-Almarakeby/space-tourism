@@ -1,7 +1,7 @@
 export default function Home() {
   return (
-    <section className="container flex flex-col lg:flex-grow items-center gap-20 px-6 py-8 md:py-24 md:gap-36 lg:gap-14 lg:flex-row justify-evenly">
-      <div className="flex flex-col items-center xl:items-start flex-grow gap-4 text-center xl:text-left md:gap-6  text-light">
+    <section className="container flex flex-col items-center gap-20 px-6 py-8 lg:flex-grow md:py-24 md:gap-36 lg:gap-14 lg:flex-row justify-evenly">
+      <div className="flex flex-col items-center flex-grow gap-4 text-center xl:items-start xl:text-left md:gap-6 text-light">
         <h3 className="uppercase tracking-[3px] md:text-xl xl:text-3xl ">
           So, You Want To Travel To
         </h3>
@@ -17,7 +17,7 @@ export default function Home() {
       </div>
       <a
         href="/destination"
-        className="text-main bg-white w-40 h-40 md:w-60 md:h-60 xl:w-72 xl:h-72 md:text-[32px] mx-auto grid place-content-center rounded-full text-xl font-Bellefair tracking-widest lg:mx-10 uppercase"
+        className="text-main bg-white w-40 h-40 md:w-60 md:h-60 xl:w-72 xl:h-72 md:text-[32px] mx-auto grid place-content-center rounded-full text-xl font-Bellefair tracking-widest lg:mx-10 xl:mx-20 relative uppercase before:absolute before:top-1/2 before:left-1/2 before:w-full before:h-full before:bg-white before:opacity-20 before:rounded-full before:transition-all hover:before:w-[150%] hover:before:h-[150%] before:-translate-x-1/2 before:-translate-y-1/2 "
       >
         Explore
       </a>

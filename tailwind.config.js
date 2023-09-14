@@ -20,14 +20,6 @@ export default {
         BarlowCondensed: "'Barlow Condensed', sans-serif",
         Bellefair: "'Bellefair', serif",
       },
-      backgroundImage: {
-        "background-home-desktop":
-          "url('./src/assets/home/background-home-desktop.jpg')",
-        "background-home-tablet":
-          "url('./src/assets/home/background-home-tablet.jpg')",
-        "background-home-mobile":
-          "url('./src/assets/home/background-home-mobile.jpg')",
-      },
     },
   },
   plugins: [],
