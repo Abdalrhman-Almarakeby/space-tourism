@@ -1,7 +1,7 @@
-import Home from "./pages/Home";
-import Destination from "./pages/Destination";
-import Crew from "./pages/Crew";
-import Technology from "./pages/Technology";
+import Home from "../pages/Home";
+import Destination from "../pages/Destination";
+import Crew from "../pages/Crew";
+import Technology from "../pages/Technology";
 
 let Page;
 switch (window.location.pathname) {
