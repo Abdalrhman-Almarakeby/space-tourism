@@ -45,7 +45,7 @@ export default function Navbar() {
       />
 
       <nav
-        className="h-[120svh] max-w-[75%] absolute pt-24 md:pt-0 md:static top-0 transition-all md:h-auto text-white bg-[#ffffff0a] backdrop-blur-2xl md:px-12 xl:pl-20 xl:pr-32 md:block"
+        className="h-[120svh] max-w-[75%] absolute pt-24 md:pt-0 md:static top-0 transition-all md:h-auto bg-[#ffffff0a] backdrop-blur-2xl md:px-12 xl:pl-20 xl:pr-32 md:block"
         style={navStyle}
         id="menu"
       >

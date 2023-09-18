@@ -4,7 +4,7 @@
 
 @layer base {
   body {
-    @apply overflow-x-hidden font-BarlowCondensed;
+    @apply overflow-x-hidden font-BarlowCondensed text-white;
   }
 }
 
@@ -22,6 +22,14 @@
 
   .tab > a {
     @apply inline-block px-8 py-3 md:py-10 xl:py-10 sm:pr-20 md:px-0;
+  }
+
+  .section-title {
+    @apply tracking-[2.7px] uppercase flex gap-4 justify-center;
+  }
+
+  .section-title > span {
+    @apply text-[#ffffff25] font-bold;
   }
 }
 

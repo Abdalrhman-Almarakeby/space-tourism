@@ -5,7 +5,7 @@ export default function Home() {
         <h3 className="uppercase tracking-[3px] md:text-xl xl:text-3xl ">
           So, You Want To Travel To
         </h3>
-        <h1 className="uppercase text-white font-Bellefair text-7xl md:text-[150px] md:leading-[150px] leading-[100px]">
+        <h1 className="uppercase font-Bellefair text-7xl md:text-[150px] md:leading-[150px] leading-[100px]">
           Space
         </h1>
         <p className="text-[15px] max-w-[55ch] leading-6 md:text-base md:leading-7 xl:text-lg xl:leading-8 xl:max-w-[75ch] tracking-widest">
