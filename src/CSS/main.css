@@ -681,6 +681,14 @@ video {
   border-radius: 9999px;
 }
 
+.border {
+  border-width: 1px;
+}
+
+.border-4 {
+  border-width: 4px;
+}
+
 .bg-\[\#ffffff0a\] {
   background-color: #ffffff0a;
 }
@@ -700,6 +708,10 @@ video {
 
 .p-6 {
   padding: 1.5rem;
+}
+
+.p-5 {
+  padding: 1.25rem;
 }
 
 .px-6 {
@@ -771,6 +783,10 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.filter {
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
 .backdrop-blur-2xl {
