@@ -30,7 +30,6 @@ export default function Destination() {
         (destination) => destination.name.toLowerCase() === e.target.innerText
       )[0]
     );
-    console.log(destination);
   }
 
   return (

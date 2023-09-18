@@ -2,23 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  @apply overflow-x-hidden font-BarlowCondensed;
+@layer base {
+  body {
+    @apply overflow-x-hidden font-BarlowCondensed;
+  }
 }
 
-.tab {
-  @apply border-r-4 border-solid border-transparent md:hover:border-b-[3px] md:hover:border-r-0 md:border-r-0;
-}
+@layer components {
+  .tab {
+    @apply border-r-4 border-solid border-transparent md:hover:border-b-[3px] md:hover:border-r-0 md:border-r-0;
+  }
 
-.active-tab {
-  @apply border-r-[3px] md:border-b-[3px] border-white md:border-r-0;
-}
-.tab:not(.active-tab) {
-  @apply hover:border-white/30;
-}
+  .active-tab {
+    @apply border-r-[3px] md:border-b-[3px] border-white md:border-r-0;
+  }
+  .tab:not(.active-tab) {
+    @apply hover:border-white/30;
+  }
 
-.tab > a {
-  @apply inline-block px-8 py-3 md:py-10 xl:py-10 sm:pr-20 md:px-0;
+  .tab > a {
+    @apply inline-block px-8 py-3 md:py-10 xl:py-10 sm:pr-20 md:px-0;
+  }
 }
 
 .bg-\[image\:var\(--homeMobile\)\] {

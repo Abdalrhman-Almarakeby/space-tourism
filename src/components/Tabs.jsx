@@ -1,6 +1,5 @@
 /* eslint-disable react/prop-types */
 export default function Tabs(props) {
-  console.log(props.destination);
   return (
     <ul>
       <li

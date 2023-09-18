@@ -434,6 +434,11 @@ video {
   display: none;
 }
 
+body {
+  overflow-x: hidden;
+  font-family: 'Barlow Condensed', sans-serif;
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -561,6 +566,70 @@ video {
 @media (min-width: 1440px) {
   .container {
     max-width: 1440px;
+  }
+}
+
+.tab {
+  border-right-width: 4px;
+  border-style: solid;
+  border-color: transparent;
+}
+
+@media (min-width: 768px) {
+  .tab {
+    border-right-width: 0px;
+  }
+
+  .tab:hover {
+    border-bottom-width: 3px;
+    border-right-width: 0px;
+  }
+}
+
+.active-tab {
+  border-right-width: 3px;
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+
+@media (min-width: 768px) {
+  .active-tab {
+    border-bottom-width: 3px;
+    border-right-width: 0px;
+  }
+}
+
+.tab:not(.active-tab):hover {
+  border-color: rgb(255 255 255 / 0.3);
+}
+
+.tab > a {
+  display: inline-block;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+@media (min-width: 375px) {
+  .tab > a {
+    padding-right: 5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .tab > a {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .tab > a {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
   }
 }
 
@@ -706,12 +775,12 @@ video {
   background-position: center;
 }
 
-.p-6 {
-  padding: 1.5rem;
-}
-
 .p-5 {
   padding: 1.25rem;
+}
+
+.p-6 {
+  padding: 1.5rem;
 }
 
 .px-6 {
@@ -799,75 +868,6 @@ video {
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
-}
-
-body {
-  overflow-x: hidden;
-  font-family: 'Barlow Condensed', sans-serif;
-}
-
-.tab {
-  border-right-width: 4px;
-  border-style: solid;
-  border-color: transparent;
-}
-
-@media (min-width: 768px) {
-  .tab {
-    border-right-width: 0px;
-  }
-
-  .tab:hover {
-    border-bottom-width: 3px;
-    border-right-width: 0px;
-  }
-}
-
-.active-tab {
-  border-right-width: 3px;
-  --tw-border-opacity: 1;
-  border-color: rgb(255 255 255 / var(--tw-border-opacity));
-}
-
-@media (min-width: 768px) {
-  .active-tab {
-    border-bottom-width: 3px;
-    border-right-width: 0px;
-  }
-}
-
-.tab:not(.active-tab):hover {
-  border-color: rgb(255 255 255 / 0.3);
-}
-
-.tab > a {
-  display: inline-block;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-}
-
-@media (min-width: 375px) {
-  .tab > a {
-    padding-right: 5rem;
-  }
-}
-
-@media (min-width: 768px) {
-  .tab > a {
-    padding-top: 2.5rem;
-    padding-bottom: 2.5rem;
-    padding-left: 0px;
-    padding-right: 0px;
-  }
-}
-
-@media (min-width: 1440px) {
-  .tab > a {
-    padding-top: 2.5rem;
-    padding-bottom: 2.5rem;
-  }
 }
 
 .bg-\[image\:var\(--homeMobile\)\] {
