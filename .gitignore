@@ -9,11 +9,8 @@ lerna-debug.log*
 
 node_modules
 dist
-dist/
-dist/index.html
 dist-ssr
 *.local
-space-tourism-website-main
 Design
 
 # Editor directories and files

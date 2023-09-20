@@ -4,7 +4,10 @@
 
 @layer base {
   body {
-    @apply overflow-x-hidden font-BarlowCondensed text-white;
+    @apply overflow-x-hidden text-white font-BarlowCondensed;
+  }
+  img {
+    @apply select-none;
   }
 }
 
@@ -25,7 +28,7 @@
   }
 
   .section-title {
-    @apply tracking-[2.7px] uppercase flex gap-4 justify-center;
+    @apply tracking-[2.7px] uppercase flex gap-4 md:gap-5 justify-center md:justify-start md:text-xl md:tracking-[3.5px];
   }
 
   .section-title > span {
@@ -95,4 +98,21 @@
   .xl\:bg-\[image\:var\(--technologyDesktop\)\] {
     background-image: var(--technologyDesktop);
   }
+}
+
+@keyframes ImgPulse {
+  0% {
+    opacity: 0.1;
+    transform: translateY(-40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+#destination-img {
+  animation-name: ImgPulse;
+  animation-iteration-count: 1;
+  animation-duration: 2s;
 }

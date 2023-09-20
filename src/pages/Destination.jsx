@@ -35,14 +35,19 @@ export default function Destination() {
   }
 
   return (
-    <section className="container px-6 pt-2 pb-10 flex flex-col gap-5">
+    <section className="container flex flex-col gap-5 px-6 pt-2 pb-10 md:px-20 md:pt-16 lg:px-48">
       <h2 className="section-title">
         <span>01</span>Pick your destination
       </h2>
-      <img src={getImage()} alt="Moon Image" loading="lazy" className="my-10" />
-      <ul className="flex gap-7 justify-center">
+      <img
+        src={getImage()}
+        alt={`${destination.name} Image`}
+        id="destination-img"
+        loading="lazy"
+        className="my-10 duration-300"
+      />
+      <ul className="flex justify-center gap-7 md:gap-9">
         {/* Make a tab for each destination in the data (destinationArr)  */}
-
         {destinationsArr.map((destinationItem) => {
           return (
             <Tab
