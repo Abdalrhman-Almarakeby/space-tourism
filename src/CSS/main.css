@@ -659,9 +659,24 @@ img {
   }
 }
 
+@media (min-width: 1440px) {
+  .section-title {
+    margin-left: -5rem;
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    letter-spacing: 4.5px;
+  }
+}
+
 .section-title > span {
   font-weight: 700;
   color: #ffffff25;
+}
+
+#destination-img {
+  animation-name: ImgPulse;
+  animation-iteration-count: 1;
+  animation-duration: 2s;
 }
 
 .absolute {
@@ -770,6 +785,10 @@ img {
   align-items: center;
 }
 
+.justify-end {
+  justify-content: flex-end;
+}
+
 .justify-center {
   justify-content: center;
 }
@@ -782,12 +801,20 @@ img {
   justify-content: space-evenly;
 }
 
+.gap-16 {
+  gap: 4rem;
+}
+
 .gap-2 {
   gap: 0.5rem;
 }
 
 .gap-20 {
   gap: 5rem;
+}
+
+.gap-32 {
+  gap: 8rem;
 }
 
 .gap-4 {
@@ -804,6 +831,10 @@ img {
 
 .gap-8 {
   gap: 2rem;
+}
+
+.gap-12 {
+  gap: 3rem;
 }
 
 .space-y-3 > :not([hidden]) ~ :not([hidden]) {
@@ -1073,12 +1104,6 @@ img {
   }
 }
 
-#destination-img {
-  animation-name: ImgPulse;
-  animation-iteration-count: 1;
-  animation-duration: 2s;
-}
-
 .before\:absolute::before {
   content: var(--tw-content);
   position: absolute;
@@ -1310,6 +1335,10 @@ img {
     margin-right: 5rem;
   }
 
+  .xl\:mt-24 {
+    margin-top: 6rem;
+  }
+
   .xl\:inline {
     display: inline;
   }
@@ -1326,8 +1355,38 @@ img {
     max-width: 75ch;
   }
 
+  .xl\:flex-row {
+    flex-direction: row;
+  }
+
   .xl\:items-start {
     align-items: flex-start;
+  }
+
+  .xl\:justify-between {
+    justify-content: space-between;
+  }
+
+  .xl\:gap-8 {
+    gap: 2rem;
+  }
+
+  .xl\:gap-40 {
+    gap: 10rem;
+  }
+
+  .xl\:gap-44 {
+    gap: 11rem;
+  }
+
+  .xl\:px-20 {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
+  .xl\:py-3 {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
   }
 
   .xl\:pl-20 {
@@ -1340,6 +1399,10 @@ img {
 
   .xl\:pt-10 {
     padding-top: 2.5rem;
+  }
+
+  .xl\:pt-8 {
+    padding-top: 2rem;
   }
 
   .xl\:text-left {
@@ -1358,6 +1421,16 @@ img {
 
   .xl\:text-lg {
     font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .xl\:text-9xl {
+    font-size: 8rem;
+    line-height: 1;
+  }
+
+  .xl\:text-xl {
+    font-size: 1.25rem;
     line-height: 1.75rem;
   }
 
