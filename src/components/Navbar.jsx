@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import logo from "../assets/shared/logo.svg";
+import { Link } from "react-router-dom";
 import hamburgerIcon from "../assets/shared/icon-hamburger.svg";
 import closeIcon from "../assets/shared/icon-close.svg";
 import NavItem from "./NavItem";
@@ -30,9 +31,9 @@ export default function Navbar() {
   return (
     <header className="top-0 left-0 flex items-center justify-between w-full p-6 overflow-hidden md:pl-10 md:p-0 xl:pt-10">
       <div>
-        <a href="/">
+        <Link to="/">
           <img src={logo} alt="Logo" className="h-10 md:h-auto" />
-        </a>
+        </Link>
       </div>
 
       <img
