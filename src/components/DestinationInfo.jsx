@@ -1,8 +1,8 @@
 /* eslint-disable react/prop-types */
 export default function DestinationInfo(props) {
   return (
-    <div className="flex flex-col gap-32 xl:gap-8 ">
-      <h3 className="pt-6 pb-4 text-6xl text-center uppercase font-Bellefair md:text-8xl xl:text-9xl">
+    <div className="flex flex-col gap-8 xl:gap-8 ">
+      <h3 className="pt-6 pb-4 text-6xl text-center uppercase font-Bellefair md:text-8xl xl:text-[7rem]">
         {props.name}
       </h3>
       <p className="text-light self-center text-[15px] leading-6 font-Barlow text-center md:text-lg md:mb-7 max-w-[50ch] xl:text-left xl:text-xl">

@@ -28,7 +28,7 @@
   }
 
   .section-title {
-    @apply tracking-[2.7px] uppercase flex gap-4 md:gap-5 justify-center md:justify-start md:text-xl md:tracking-[3.5px] xl:-ml-20 xl:text-3xl  xl:tracking-[4.5px];
+    @apply tracking-[2.7px] uppercase flex gap-4 md:gap-5 justify-center md:justify-start md:text-xl md:tracking-[3.5px] xl:text-3xl  xl:tracking-[4.5px];
   }
 
   .section-title > span {

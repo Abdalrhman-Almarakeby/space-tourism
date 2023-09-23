@@ -37,7 +37,7 @@ export default function Destination() {
   return (
     <section className="container flex flex-col gap-5 px-6 pt-2 pb-10 md:px-20 xl:px-20 md:pt-16 lg:px-48 xl:flex-row xl:justify-between xl:pt-8 xl:gap-44">
       <div className="flex flex-col flex-grow gap-12">
-        <h2 className="section-title">
+        <h2 className="section-title xl:-ml-12 ">
           <span>01</span>Pick your destination
         </h2>
         <img
@@ -48,7 +48,7 @@ export default function Destination() {
           className="my-10 duration-300"
         />
       </div>
-      <div className="flex flex-col xl:mt-24 justify-end xl:gap-8">
+      <div className="flex flex-col justify-end xl:mt-24 xl:gap-8">
         <ul className="flex justify-center gap-7 md:gap-9">
           {/* Make a tab for each destination in the data (destinationArr)  */}
           {destinationsArr.map((destinationItem) => {

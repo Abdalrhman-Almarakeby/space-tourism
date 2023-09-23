@@ -661,7 +661,6 @@ img {
 
 @media (min-width: 1440px) {
   .section-title {
-    margin-left: -5rem;
     font-size: 1.875rem;
     line-height: 2.25rem;
     letter-spacing: 4.5px;
@@ -801,8 +800,8 @@ img {
   justify-content: space-evenly;
 }
 
-.gap-16 {
-  gap: 4rem;
+.gap-12 {
+  gap: 3rem;
 }
 
 .gap-2 {
@@ -811,10 +810,6 @@ img {
 
 .gap-20 {
   gap: 5rem;
-}
-
-.gap-32 {
-  gap: 8rem;
 }
 
 .gap-4 {
@@ -831,10 +826,6 @@ img {
 
 .gap-8 {
   gap: 2rem;
-}
-
-.gap-12 {
-  gap: 3rem;
 }
 
 .space-y-3 > :not([hidden]) ~ :not([hidden]) {
@@ -1335,6 +1326,10 @@ img {
     margin-right: 5rem;
   }
 
+  .xl\:-ml-12 {
+    margin-left: -3rem;
+  }
+
   .xl\:mt-24 {
     margin-top: 6rem;
   }
@@ -1367,16 +1362,12 @@ img {
     justify-content: space-between;
   }
 
-  .xl\:gap-8 {
-    gap: 2rem;
-  }
-
-  .xl\:gap-40 {
-    gap: 10rem;
-  }
-
   .xl\:gap-44 {
     gap: 11rem;
+  }
+
+  .xl\:gap-8 {
+    gap: 2rem;
   }
 
   .xl\:px-20 {
@@ -1414,6 +1405,10 @@ img {
     line-height: 2.25rem;
   }
 
+  .xl\:text-\[7rem\] {
+    font-size: 7rem;
+  }
+
   .xl\:text-base {
     font-size: 1rem;
     line-height: 1.5rem;
@@ -1422,11 +1417,6 @@ img {
   .xl\:text-lg {
     font-size: 1.125rem;
     line-height: 1.75rem;
-  }
-
-  .xl\:text-9xl {
-    font-size: 8rem;
-    line-height: 1;
   }
 
   .xl\:text-xl {
