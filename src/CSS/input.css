@@ -43,66 +43,66 @@
 }
 
 .bg-\[image\:var\(--homeMobile\)\] {
-  background-image: var(--homeMobile);
+  background-image: var(--homeMobile), #130f41fb;
 }
 
 @media (min-width: 768px) {
   .md\:bg-\[image\:var\(--homeTablet\)\] {
-    background-image: var(--homeTablet);
+    background-image: var(--homeTablet), #130f41fb;
   }
 }
 
 @media (min-width: 1440px) {
   .xl\:bg-\[image\:var\(--homeDesktop\)\] {
-    background-image: var(--homeDesktop);
+    background-image: var(--homeDesktop), #130f41fb;
   }
 }
 
 .bg-\[image\:var\(--destinationMobile\)\] {
-  background-image: var(--destinationMobile);
+  background-image: var(--destinationMobile), #130f41fb;
 }
 
 @media (min-width: 768px) {
   .md\:bg-\[image\:var\(--destinationTablet\)\] {
-    background-image: var(--destinationTablet);
+    background-image: var(--destinationTablet), #130f41fb;
   }
 }
 
 @media (min-width: 1440px) {
   .xl\:bg-\[image\:var\(--destinationDesktop\)\] {
-    background-image: var(--destinationDesktop);
+    background-image: var(--destinationDesktop), #130f41fb;
   }
 }
 
 .bg-\[image\:var\(--crewMobile\)\] {
-  background-image: var(--crewMobile);
+  background-image: var(--crewMobile), #130f41fb;
 }
 
 @media (min-width: 768px) {
   .md\:bg-\[image\:var\(--crewTablet\)\] {
-    background-image: var(--crewTablet);
+    background-image: var(--crewTablet), #130f41fb;
   }
 }
 
 @media (min-width: 1440px) {
   .xl\:bg-\[image\:var\(--crewDesktop\)\] {
-    background-image: var(--crewDesktop);
+    background-image: var(--crewDesktop), #130f41fb;
   }
 }
 
 .bg-\[image\:var\(--technologyMobile\)\] {
-  background-image: var(--technologyMobile);
+  background-image: var(--technologyMobile), #130f41fb;
 }
 
 @media (min-width: 768px) {
   .md\:bg-\[image\:var\(--technologyTablet\)\] {
-    background-image: var(--technologyTablet);
+    background-image: var(--technologyTablet), #130f41fb;
   }
 }
 
 @media (min-width: 1440px) {
   .xl\:bg-\[image\:var\(--technologyDesktop\)\] {
-    background-image: var(--technologyDesktop);
+    background-image: var(--technologyDesktop), #130f41fb;
   }
 }
 
