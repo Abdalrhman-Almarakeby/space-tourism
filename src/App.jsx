@@ -4,15 +4,16 @@ import Destination from "./pages/Destination";
 import Crew from "./pages/Crew";
 import Technology from "./pages/Technology";
 import { styleObject, backgroundFunc } from "./utils/backgroundImg";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 import "./CSS/main.css";
 
 export default function App() {
+  console.log(useLocation().pathname);
   return (
     <div
       style={styleObject}
       className={`
-      ${backgroundFunc(window.location.pathname)} 
+      ${backgroundFunc(useLocation().pathname)} 
       min-h-screen flex flex-col relative bg-cover bg-center overflow-hidden
       `}
     >
