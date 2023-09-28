@@ -29,6 +29,9 @@ export const styleObject = {
 export function backgroundFunc(pathname, base) {
   let courantPage;
   switch (pathname) {
+    case `/${base}`:
+      courantPage = "home";
+      break;
     case `/${base}/`:
       courantPage = "home";
       break;
