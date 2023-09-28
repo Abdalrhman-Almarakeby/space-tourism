@@ -26,19 +26,19 @@ export const styleObject = {
   "--technologyDesktop": `url(${technologyDesktop})`,
 };
 
-export function backgroundFunc(pathname) {
+export function backgroundFunc(pathname, base) {
   let courantPage;
   switch (pathname) {
-    case "/":
+    case `/${base}/`:
       courantPage = "home";
       break;
-    case "/destination":
+    case `/${base}/destination`:
       courantPage = "destination";
       break;
-    case "/crew":
+    case `/${base}/crew`:
       courantPage = "crew";
       break;
-    case "/technology":
+    case `/${base}/technology`:
       courantPage = "technology";
       break;
   }

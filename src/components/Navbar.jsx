@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { useEffect, useState } from "react";
 import logo from "../assets/shared/logo.svg";
 import { Link } from "react-router-dom";
@@ -5,7 +6,7 @@ import hamburgerIcon from "../assets/shared/icon-hamburger.svg";
 import closeIcon from "../assets/shared/icon-close.svg";
 import NavItem from "./NavItem";
 
-export default function Navbar() {
+export default function Navbar({ base }) {
   const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
@@ -49,12 +50,7 @@ export default function Navbar() {
   return (
     <header className="top-0 left-0 flex items-center justify-between w-full p-6 overflow-hidden md:pl-10 md:p-0 xl:pt-10">
       <div>
-        <Link
-          to="/"
-          // onClick={() => {
-          //   setMenuOpen(false);
-          // }}
-        >
+        <Link to={`/${base}/`}>
           <img src={logo} alt="Logo" className="h-10 md:h-auto" />
         </Link>
       </div>
@@ -75,22 +71,30 @@ export default function Navbar() {
         id="navbar"
       >
         <ul className="flex gap-2 md:gap-10 md:text-sm tracking-[3px] flex-col md:flex-row xl:text-base">
-          <NavItem num={0} href="/" onClick={() => setMenuOpen(false)}>
+          <NavItem
+            num={0}
+            href={`/${base}/`}
+            onClick={() => setMenuOpen(false)}
+          >
             Home
           </NavItem>
           <NavItem
             num={1}
-            href="/destination"
+            href={`/${base}/destination`}
             onClick={() => setMenuOpen(false)}
           >
             Destination
           </NavItem>
-          <NavItem num={2} href="/crew" onClick={() => setMenuOpen(false)}>
+          <NavItem
+            num={2}
+            href={`/${base}/crew`}
+            onClick={() => setMenuOpen(false)}
+          >
             Crew
           </NavItem>
           <NavItem
             num={3}
-            href="/technology"
+            href={`/${base}/technology`}
             onClick={() => setMenuOpen(false)}
           >
             Technology
