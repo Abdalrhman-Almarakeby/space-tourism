@@ -19,7 +19,7 @@ export default function App() {
     >
       <Navbar base={base} />
       <Routes>
-        <Route path={`/${base}/`} element={<Home />} />
+        <Route path={`/${base}/`} element={<Home base={base} />} />
         <Route path={`/${base}/destination`} element={<Destination />} />
         <Route path={`/${base}/crew`} element={<Crew />} />
         <Route path={`/${base}/technology`} element={<Technology />} />
