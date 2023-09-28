@@ -1020,77 +1020,65 @@ img {
 }
 
 .bg-\[image\:var\(--homeMobile\)\] {
-  background-color: #130f41fb;
   background-image: var(--homeMobile);
 }
 
 @media (min-width: 768px) {
   .md\:bg-\[image\:var\(--homeTablet\)\] {
-    background-color: #130f41fb;
     background-image: var(--homeTablet);
   }
 }
 
 @media (min-width: 1440px) {
   .xl\:bg-\[image\:var\(--homeDesktop\)\] {
-    background-color: #130f41fb;
     background-image: var(--homeDesktop);
   }
 }
 
 .bg-\[image\:var\(--destinationMobile\)\] {
-  background-color: #130f41fb;
   background-image: var(--destinationMobile);
 }
 
 @media (min-width: 768px) {
   .md\:bg-\[image\:var\(--destinationTablet\)\] {
-    background-color: #130f41fb;
     background-image: var(--destinationTablet);
   }
 }
 
 @media (min-width: 1440px) {
   .xl\:bg-\[image\:var\(--destinationDesktop\)\] {
-    background-color: #130f41fb;
     background-image: var(--destinationDesktop);
   }
 }
 
 .bg-\[image\:var\(--crewMobile\)\] {
-  background-color: #130f41fb;
   background-image: var(--crewMobile);
 }
 
 @media (min-width: 768px) {
   .md\:bg-\[image\:var\(--crewTablet\)\] {
-    background-color: #130f41fb;
     background-image: var(--crewTablet);
   }
 }
 
 @media (min-width: 1440px) {
   .xl\:bg-\[image\:var\(--crewDesktop\)\] {
-    background-color: #130f41fb;
     background-image: var(--crewDesktop);
   }
 }
 
 .bg-\[image\:var\(--technologyMobile\)\] {
-  background-color: #130f41fb;
   background-image: var(--technologyMobile);
 }
 
 @media (min-width: 768px) {
   .md\:bg-\[image\:var\(--technologyTablet\)\] {
-    background-color: #130f41fb;
     background-image: var(--technologyTablet);
   }
 }
 
 @media (min-width: 1440px) {
   .xl\:bg-\[image\:var\(--technologyDesktop\)\] {
-    background-color: #130f41fb;
     background-image: var(--technologyDesktop);
   }
 }
