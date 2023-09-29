@@ -44,6 +44,14 @@
   .active.active {
     @apply border-b-white;
   }
+
+  .bullet {
+    @apply w-3 h-3 rounded-full bg-white/10;
+  }
+
+  .bullet.active {
+    @apply bg-white;
+  }
 }
 
 .bg-\[image\:var\(--homeMobile\)\] {

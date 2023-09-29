@@ -2,19 +2,22 @@ import propTypes from "prop-types";
 
 export default function Tab({
   children,
-  handleTabClick,
-  destination,
+  tabData,
+  setFunc,
+  objectsArr,
   ...props
 }) {
   return (
     <li
       {...props}
-      data-tab={children}
-      onClick={handleTabClick}
-      className={`
-        ${destination.name === children ? "active" : ""}
-        tab
-        `}
+      data-tab={tabData}
+      onClick={(e) =>
+        setFunc(
+          objectsArr.find(
+            (obj) => obj.name === e.target.getAttribute("data-tab")
+          )
+        )
+      }
     >
       {children}
     </li>
@@ -22,9 +25,10 @@ export default function Tab({
 }
 
 Tab.propTypes = {
-  children: propTypes.string.isRequired,
-  handleTabClick: propTypes.func.isRequired,
-  destination: propTypes.shape({
-    name: propTypes.string.isRequired,
-  }),
+  children: propTypes.node,
+  tabData: propTypes.string.isRequired,
+  setFunc: propTypes.func.isRequired,
+  objectsArr: propTypes.arrayOf(
+    propTypes.shape({ name: propTypes.string.isRequired })
+  ).isRequired,
 };

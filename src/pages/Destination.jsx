@@ -24,16 +24,8 @@ export default function Destination() {
     }
   }
 
-  function handleTabClick(e) {
-    setDestination(
-      destinationsArr.find(
-        (destination) => destination.name === e.target.getAttribute("data-tab")
-      )
-    );
-  }
-
   return (
-    <section className="container flex flex-col gap-5 px-6 pt-2 pb-10 md:px-20 xl:px-20 md:pt-16 lg:px-48 xl:flex-col xl:justify-between xl:pt-8 xl:gap-12">
+    <section className="container flex flex-col gap-5 px-6 pt-2 pb-10 md:px-20 xl:px-20 lg:px-0 md:pt-16 xl:flex-col xl:justify-between xl:pt-8 xl:gap-12">
       <h2 className="section-title">
         <span>01</span>Pick your destination
       </h2>
@@ -44,7 +36,7 @@ export default function Destination() {
             alt={`${destination.name} Image`}
             id="destination-img"
             loading="lazy"
-            className="my-10 duration-300"
+            className="my-10 duration-300 lg:px-48 xl:p-0"
           />
         </div>
         <div className="flex flex-col justify-end xl:mt-24 xl:gap-8">
@@ -53,8 +45,12 @@ export default function Destination() {
             {destinationsArr.map((destinationItem) => {
               return (
                 <Tab
-                  handleTabClick={handleTabClick}
-                  destination={destination}
+                  tabData={destinationItem.name}
+                  objectsArr={destinationsArr}
+                  setFunc={setDestination}
+                  className={`${
+                    destination.name === destinationItem.name ? "active" : ""
+                  } tab`}
                   key={destinationItem.name}
                 >
                   {destinationItem.name}
