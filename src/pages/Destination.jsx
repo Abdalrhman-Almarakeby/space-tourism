@@ -26,9 +26,9 @@ export default function Destination() {
 
   function handleTabClick(e) {
     setDestination(
-      destinationsArr.filter(
+      destinationsArr.find(
         (destination) => destination.name === e.target.getAttribute("data-tab")
-      )[0]
+      )
     );
   }
 

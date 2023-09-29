@@ -8,22 +8,21 @@ import { Route, Routes, useLocation } from "react-router-dom";
 import "./CSS/main.css";
 
 export default function App() {
-  const base = "space-tourism";
   return (
-    <div
+    <main
       style={styleObject}
       className={`
-      ${backgroundFunc(useLocation().pathname, base)} 
+      ${backgroundFunc(useLocation().pathname)} 
       min-h-screen flex flex-col relative bg-cover bg-center overflow-hidden
       `}
     >
-      <Navbar base={base} />
+      <Navbar />
       <Routes>
-        <Route path={`/${base}/`} element={<Home base={base} />} />
-        <Route path={`/${base}/destination`} element={<Destination />} />
-        <Route path={`/${base}/crew`} element={<Crew />} />
-        <Route path={`/${base}/technology`} element={<Technology />} />
+        <Route path={`/space-tourism/`} element={<Home />} />
+        <Route path={`/space-tourism/destination`} element={<Destination />} />
+        <Route path={`/space-tourism/crew`} element={<Crew />} />
+        <Route path={`/space-tourism/technology`} element={<Technology />} />
       </Routes>
-    </div>
+    </main>
   );
 }

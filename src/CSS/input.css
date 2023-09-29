@@ -12,23 +12,20 @@
 }
 
 @layer components {
-  .tab {
-    @apply border-r-4 border-solid border-transparent md:hover:border-b-[3px] md:hover:border-r-0 md:border-r-0;
+  .nav-item {
+    @apply border-r-4 border-solid border-transparent md:hover:border-b-[3px] md:hover:border-r-0 md:border-r-0 hover:border-white/30;
   }
 
-  .active-tab {
+  .nav-item.active {
     @apply border-r-[3px] md:border-b-[3px] border-white md:border-r-0;
   }
-  .tab:not(.active-tab) {
-    @apply hover:border-white/30;
-  }
 
-  .tab > a {
+  .nav-item > a {
     @apply inline-block px-8 py-3 md:py-10 xl:py-10 sm:pr-20 md:px-0;
   }
 
   .section-title {
-    @apply tracking-[2.7px] uppercase flex gap-4 md:gap-5 justify-center md:justify-start md:text-xl md:tracking-[3.5px] xl:text-3xl  xl:tracking-[4.5px];
+    @apply tracking-[2.7px] uppercase flex gap-4 md:gap-5 justify-center md:justify-start md:text-xl md:tracking-[3.5px] xl:text-3xl xl:tracking-[4.5px];
   }
 
   .section-title > span {
@@ -39,6 +36,13 @@
     animation-name: ImgPulse;
     animation-iteration-count: 1;
     animation-duration: 2s;
+  }
+
+  .tab {
+    @apply py-2 uppercase text-sm border-b-[3px] border-transparent cursor-pointer md:text-base tracking-[2.5px] xl:py-3;
+  }
+  .active.active {
+    @apply border-b-white;
   }
 }
 

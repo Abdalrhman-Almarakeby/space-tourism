@@ -1,4 +1,5 @@
 import propTypes from "prop-types";
+
 export default function Tab({
   children,
   handleTabClick,
