@@ -1,4 +1,5 @@
-/* eslint-disable react/prop-types */
+import propTypes from "prop-types";
+
 export default function DestinationInfo(props) {
   return (
     <div className="flex flex-col gap-8 xl:gap-8 ">
@@ -29,3 +30,10 @@ export default function DestinationInfo(props) {
     </div>
   );
 }
+
+DestinationInfo.propTypes = {
+  name: propTypes.string.isRequired,
+  description: propTypes.string.isRequired,
+  distance: propTypes.string.isRequired,
+  travel: propTypes.string.isRequired,
+};
